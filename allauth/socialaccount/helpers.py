@@ -179,6 +179,9 @@ def _complete_social_login(request, sociallogin):
 
 
 def complete_social_signup(request, sociallogin):
+    print('------in socialaccount helpers complete_social_signup-------')
+    print(app_settings)
+    print(app_settings.EMAIL_VERIFICATION)
     return complete_signup(
         request,
         sociallogin.user,
